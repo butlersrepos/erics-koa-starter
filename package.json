@@ -8,11 +8,12 @@
     "watch:img": "cpx src/client/img/* build/img -w",
     "watch:css": "node-sass src/client/scss/ -o build/css/ -w",
     "watch:js": "watchify src/client/js/index.js -o build/js/bundle.js -v",
+	"watchers": "npm run watch:img & npm run watch:css & npm run watch:js",
     "browserify": "mkdirp build/js && browserify src/client/js/index.js -o build/js/bundle.js",
     "sass": "node-sass src/client/scss/ -o build/css/",
     "build": "npm run copy:img & npm run browserify & npm run sass",
     "test": "mocha test/ --harmony --compilers js:babel-core/register",
-    "dev": "npm run build && npm run watch:img & npm run watch:css & npm run watch:js & nodemon src/app.js"
+    "dev": "npm run build && npm run watchers & nodemon src/app.js"
   },
   "repository": {
     "type": "git",
