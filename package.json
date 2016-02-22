@@ -1,8 +1,8 @@
 {
-  "name": "neo-demons",
+  "name": "erics-koa-starter",
   "version": "0.1.0",
-  "description": "A crap game made by crap people",
-  "main": "neo-demons.js",
+  "description": "Koa, Jade, Sass, Browserify, Mocha, and Node starter project structure with build scripting",
+  "main": "src/app.js",
   "scripts": {
     "watch-css": "node-sass src/client/scss/ -o build/css/ -w",
     "watch-js": "watchify src/client/js/index.js -o build/js/bundle.js -v",
@@ -14,21 +14,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/butlersrepos/neo-demons.git"
+    "url": "git+https://github.com/butlersrepos/erics-koa-starter.git"
   },
   "keywords": [
     "Node",
-    "Game",
-    "Browser",
-    "Sockets",
-    "Terrible"
+    "Koa",
+    "Browserify",
+    "Mocha",
+    "Sass",
+    "Jade"
   ],
   "author": "Eric Butler",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/butlersrepos/neo-demons/issues"
+    "url": "https://github.com/butlersrepos/erics-koa-starter/issues"
   },
-  "homepage": "https://github.com/butlersrepos/neo-demons#readme",
+  "homepage": "https://github.com/butlersrepos/erics-koa-starter#readme",
   "dependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.5.1",
